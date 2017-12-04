@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="srbberlin">
-    <title>Portfolio srbberlin</title>
-    <link rel="stylesheet prefetch" href="./css/bootstrap.min.css">
-    <link rel="stylesheet prefetch" href="./css/main.css">
-  </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - fcc-0002 The Portfolio Page</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="80">
-    <nav id ="Nav" class="navbar navbar-inverse navbar-fixed-top">
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+      <nav id ="Nav" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Top</a>
+          <a class="navbar-brand" href="#MAIN">Top</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><a class="scrollable" href="#about">About</a></li>
@@ -23,9 +25,9 @@
         </ul>
       </div>
     </nav>
-    <div id="ALL">
-      <main id="MAIN" class="top-main">
-        <header>
+    <div id="ALL" class="container">
+      <main class="top-main">
+        <header id="MAIN">
           <article>
             <h1>My Portfolio !</h1>
             <p>This is a challenge to be passed at the freeCodeCamp. So there are just a few Projects to show.</p>
@@ -41,31 +43,46 @@
         <section class="section" id="projects">
           <article>
             <h1>Projects:</h1>
-            <p> ... </p>
-            <a href="http://www.hans-schrieber.de" target="#PRES"><img alt="..." src="img/hans.png"></a>
-            <a href="http://www.lena-tietgen.de" target="#PRES"><img alt="..." src="img/lena.png"></a>
-            <a href="http://www.braunisch-communication.de" target="#PRES"><img alt="..." src="img/braunisch.png"></a>
-            <a href="http://www.sharpworks.de" target="#PRES"><img alt="..." src="img/sharpworks.png"></a>
-            <a href="http://tdm-site.hans-schrieber.de" target="#PRES"><img alt="..." src="img/tdm.png"></a>
+            <p> Some websites i helped to build in the past. Just click on the bottoms below and see. </p>
+            <a href="#projects" class="pres-link"><img id="0001" class="pres-navi" alt="..." src="img/hans.png"></a>
+            <a href="#projects" class="pres-link"><img id="0002" class="pres-navi" alt="..." src="img/lena.png"></a>
+            <a href="#projects" class="pres-link"><img id="0003" class="pres-navi" alt="..." src="img/braunisch.png"></a>
+            <a href="#projects" class="pres-link"><img id="0004" class="pres-navi" alt="..." src="img/sharpworks.png"></a>
+            <a href="#projects" class="pres-link"><img id="0005" class="pres-navi" alt="..." src="img/tdm.png"></a>
+            <a href="#projects" class="pres-link"><img id="0006" class="pres-navi" alt="..." src="img/nachama.png"></a>
           </article>
-          <object id="PRES" src="http://www.hans-schrieber.de">
+          <embed id="PRES" src="https://srbberlin.surge.sh/sites/srb">
         </section>
         <section class="section" id="contact">
           <article>
             <h1>Get in contact:</h1>
-            <p> ... </p>
+            <p> Sorry, this this doesn't work right now. </p>
+            <form action="#">
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
           </article>
         </section>
       </main>
-      <footer class="footer">
+      <footer>
+        <section>
           <article>
-            <h1>What's left:</h1>
-            <p> ... </p>
+            <p>Find me on <a href="https://www.facebook.com/hans.schrieber.1" target="_blank">Facebook</a>&nbsp;<a href="https://www.linkedin.com/in/schrieber/" target="_blank">Linkedin</a>&nbsp;<a href="https://www.xing.com/profile/Hans_Schrieber" target="_blank">Xing</a>&nbsp;</p>
           </article>
+        </section>
       </footer>
     </div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
 </html>

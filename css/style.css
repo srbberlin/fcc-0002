@@ -1,0 +1,69 @@
+body {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+article {
+  background-color: rgba(235, 180, 10, .9);
+  color: black;
+  margin-top: 50px;
+  padding: 5px 40px 30px 40px;
+}
+
+article p {
+  font-size: 140%;
+}
+
+footer {
+  margin-bottom: 600px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+#ALL {
+  background-image: url("https://srbberlin.surge.sh/sites/fcc-0002/dsc_0014.jpg");
+  background-repeat: no-repeat;
+  background-position: center top; 
+  background-attachment: fixed;
+  padding: 0px 27px;
+}
+
+body, #Nav, #ALL {
+  margin: 0 auto;
+}
+
+#MAIN {
+  padding-top:200px;
+}
+
+#PRES {
+  display: block;
+  margin: 35px auto 0px auto;
+  width: 818px; 
+  height: 650px;
+  background-color: white;
+}
+
+@media (min-width: 871px) {
+  #Nav, #ALL {
+    width: 871px;
+  }
+}
+
+@media (max-width: 870px) {
+  #PRES {
+    display: none;
+  }
+}
+
+.pres-navi {
+  margin: 2px 0;
+}
