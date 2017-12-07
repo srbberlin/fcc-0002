@@ -7,7 +7,6 @@ http://jsfiddle.net/ianclark001/rkocah23/
   var HISTORY_SUPPORT = false;//!!(history && history.pushState);
 
   var url = {
-    //"0001": "https://uptight-property.surge.sh/",
     "0001": "https://srbberlin.surge.sh/sites/srb",
     "0002": "https://srbberlin.surge.sh/sites/lena",
     "0003": "https://srbberlin.surge.sh/sites/braunisch",
@@ -37,12 +36,6 @@ http://jsfiddle.net/ianclark001/rkocah23/
            this.parentElement.target = '_blank';
            this.parentElement.href = url[this.id]
          })
-      }
-      else {
-         //$.each($(".pres-navi"), function() {
-         //  this.parentElement.target = '';
-         //  this.parentElement.href = "#projects"
-         //});
       }
     },
  
