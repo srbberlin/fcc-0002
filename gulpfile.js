@@ -7,7 +7,7 @@ var config = {
   css:    __dirname + '/css/**/*.css',
   js:     __dirname + '/js/**/*.js',
   img:    __dirname + '/img/**/*',
-  fonts:  __dirname + '/fonts/**/*'
+  //fonts:  __dirname + '/fonts/**/*'
 }
 
 gulp.task('reload', function() {
@@ -25,7 +25,7 @@ gulp.task('serve', function() {
   gulp.watch(config.css, ['reload'])
   gulp.watch(config.js, ['reload'])
   gulp.watch(config.img, ['reload'])
-  gulp.watch(config.fonts, ['reload'])
+  //gulp.watch(config.fonts, ['reload'])
 })
 
 gulp.task('default', ['serve'])
