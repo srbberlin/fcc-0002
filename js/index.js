@@ -29,7 +29,7 @@ http://jsfiddle.net/ianclark001/rkocah23/
     ANCHOR_REGEX: /^#[^ ]+$/,
 
     ress: function () {
-      $("#MAIN").css("padding-top", $("#Nav").height());
+      $("#welcome-section").css("padding-top", $("#navbar").height());
       lWidth = $("#ALL").width();
       if (lWidth < 817) {
          $.each($(".pres-navi"), function() {
@@ -49,14 +49,14 @@ http://jsfiddle.net/ianclark001/rkocah23/
     },
 
     getFixedOffset: function() {
-      return $("#Nav").height() + 50;
+      return $("#navbar").height() + 50;
     },
 
     scrollIfAnchor: function(href, pushToHistory) {
       var notExtern = this.ANCHOR_REGEX.test(href), match, anchorOffset;
 
       if(!notExtern) {
-        match = document.getElementById("MAIN");
+        match = document.getElementById("#welcome-section");
       }
       else {
         match = document.getElementById(href.slice(1));

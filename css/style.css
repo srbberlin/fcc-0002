@@ -4,6 +4,10 @@ body {
   right: auto;
 }
 
+#welcome-section {
+  height: 100vh;
+}
+
 article {
   background-color: rgba(235, 180, 10, .9);
   color: black;
@@ -36,7 +40,7 @@ footer a:hover {
   padding: 0px 27px;
 }
 
-body, #Nav, #ALL {
+body, #navbar, #ALL {
   margin: 0 auto;
 }
 
@@ -53,7 +57,7 @@ body, #Nav, #ALL {
 }
 
 @media (min-width: 871px) {
-  #Nav, #ALL {
+  #navbar, #ALL {
     width: 871px;
   }
 }

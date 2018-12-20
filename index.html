@@ -3,86 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>FreeCodeCamp - fcc-0002 The Portfolio Page</title>
-  
-  
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-      <nav id ="Nav" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#MAIN">Top</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="scrollable" href="#about">About</a></li>
-          <li><a class="scrollable" href="#projects">Projects</a></li>
-          <li><a class="scrollable" href="#contact">Contact</a></li>
-        </ul>
+  <nav id ="navbar" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#welcome-section">Top</a>
       </div>
-    </nav>
-    <div id="ALL" class="container">
-      <main class="top-main">
-        <header id="MAIN">
-          <article>
-            <h1>My Portfolio !</h1>
-            <p>This is a challenge to be passed at the freeCodeCamp. So there are just a few Projects to show.</p>
-            <p>But ... there's a lot more to come ...</p>
-          </article>
-        </header>
-        <section class="section" id="about">
-          <article>
-            <h1>About me:</h1>
-            <p>For about 30 years I worked as a programmer mainly in technical domains. Right now I want to start a new thread by develloping frontend related projects. This means getting back to experiences I made while studing at the "Hochschule für Bildende Künste" in Hamburg, Germany.</p>
-          </article>
-        </section>
-        <section class="section" id="projects">
-          <article>
-            <h1>Projects:</h1>
-            <p> Some websites i helped to build in the past. Just click on the bottoms below and see. </p>
-            <a href="#projects" class="pres-link"><img id="0001" class="pres-navi" alt="..." src="img/hans.png"></a>
-            <a href="#projects" class="pres-link"><img id="0002" class="pres-navi" alt="..." src="img/lena.png"></a>
-            <a href="#projects" class="pres-link"><img id="0003" class="pres-navi" alt="..." src="img/braunisch.png"></a>
-            <a href="#projects" class="pres-link"><img id="0004" class="pres-navi" alt="..." src="img/sharpworks.png"></a>
-            <a href="#projects" class="pres-link"><img id="0005" class="pres-navi" alt="..." src="img/tdm.png"></a>
-            <a href="#projects" class="pres-link"><img id="0006" class="pres-navi" alt="..." src="img/nachama.png"></a>
-          </article>
-          <embed id="PRES" src="https://srbberlin.surge.sh/sites/srb">
-        </section>
-        <section class="section" id="contact">
-          <article>
-            <h1>Get in contact:</h1>
-            <p> Sorry, this this doesn't work right now. </p>
-            <form action="#">
-              <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-          </article>
-        </section>
-      </main>
-      <footer>
-        <section>
-          <article>
-            <p>Find me on <a href="https://www.facebook.com/hans.schrieber.1" target="_blank">Facebook</a>&nbsp;<a href="https://www.linkedin.com/in/schrieber/" target="_blank">Linkedin</a>&nbsp;<a href="https://www.xing.com/profile/Hans_Schrieber" target="_blank">Xing</a>&nbsp;</p>
-          </article>
-        </section>
-      </footer>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="scrollable" href="#about">About</a></li>
+        <li><a class="scrollable" href="#projects">Projects</a></li>
+        <li><a class="scrollable" href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+  <div id="ALL" class="container">
+    <main class="top-main">
+      <section id="welcome-section">
+        <article>
+          <h1 id="title">My Portfolio !</h1>
+          <p id="description">
+            This is a challenge to be passed at the freeCodeCamp. So there are just a few Projects to show.<br/>
+            But ... there's a lot more to come ...
+          </p>
+        </article>
+      </section>
+      <section class="section" id="about">
+        <article>
+          <h1>About me:</h1>
+          <p>For about 30 years I worked as a programmer mainly in technical domains. Right now I want to start a new thread by develloping frontend related projects. This means getting back to experiences I made while studing at the "Hochschule für Bildende Künste" in Hamburg, Germany.</p>
+        </article>
+      </section>
+      <section class="section" id="projects">
+        <article>
+          <h1>Projects:</h1>
+          <p> Some websites i helped to build in the past. Just click on the bottoms below and see. </p>
+          <a href="#projects" class="pres-link"><img id="0001" class="pres-navi project-tile" alt="..." src="img/hans.png"></a>
+          <a href="#projects" class="pres-link"><img id="0002" class="pres-navi project-tile" alt="..." src="img/lena.png"></a>
+          <a href="#projects" class="pres-link"><img id="0003" class="pres-navi project-tile" alt="..." src="img/braunisch.png"></a>
+          <a href="#projects" class="pres-link"><img id="0004" class="pres-navi project-tile" alt="..." src="img/sharpworks.png"></a>
+          <a href="#projects" class="pres-link"><img id="0005" class="pres-navi project-tile" alt="..." src="img/tdm.png"></a>
+          <a href="#projects" class="pres-link"><img id="0006" class="pres-navi project-tile" alt="..." src="img/nachama.png"></a>
+        </article>
+        <embed id="PRES" src="https://srbberlin.surge.sh/sites/srb">
+      </section>
+      <section class="section" id="contact">
+        <article>
+          <h1>Get in contact:</h1>
+          <p> Sorry, this this doesn't work right now. </p>
+          <form action="mailto:info@hans-schrieber.de" enctype="text/plain" method="GET">
+            <div class="form-group">
+              <label for="email">Breef Subject:</label>
+              <input type="text" class="form-control" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="comment">So Now:</label>
+              <textarea class="form-control" rows="5" id="comment" name="body"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </article> 
+      </section>
+    </main>
+    <footer>
+      <section>
+        <article>
+          <p>
+            Find me on
+            <a href="https://www.facebook.com/hans.schrieber.1" target="_blank">Facebook</a>&nbsp;
+            <a href="https://www.linkedin.com/in/schrieber/" target="_blank">Linkedin</a>&nbsp;
+            <a href="https://www.xing.com/profile/Hans_Schrieber" target="_blank">Xing</a>&nbsp;
+            <a href="https://github.com/srbberlin/" target="_blank" id="profile-link">Git</a>&nbsp;
+          </p>
+        </article>
+      </section>
+    </footer>
+  </div>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
