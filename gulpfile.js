@@ -28,5 +28,4 @@ function serve (cp) {
 
   cp();
 }
-
 exports.default = serve
