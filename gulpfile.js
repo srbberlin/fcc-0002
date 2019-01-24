@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 
-
 var config = {
   base:   __dirname + '/',
   html:   __dirname + '/**/*.html',
@@ -11,12 +10,10 @@ var config = {
 }
 
 function reload () {
-  console.log('reload');
   browserSync.reload()
 }
 
 function serve () {
-  console.log('serve')
   browserSync({
     server: config.base
   })
