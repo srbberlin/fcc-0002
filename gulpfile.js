@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 
+
 var config = {
   base:   __dirname + '/',
   html:   __dirname + '/**/*.html',
@@ -25,6 +26,4 @@ function serve () {
   gulp.watch(config.js, reload)
   gulp.watch(config.img, reload)
 }
-
 exports.default = serve
-
